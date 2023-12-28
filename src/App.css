@@ -1,0 +1,142 @@
+
+.grid-container{
+    margin-top: -180px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 0,0,0,0;
+    text-align: center;
+    
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -10px;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Baskervville";
+    font-size: 30pt;
+}
+
+.winner{
+    position: absolute;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Courier";
+    font-size: 30pt;
+}
+
+@media (max-width: 441px){
+    .main{
+        width: 430px;
+        margin-top: -20px;
+ 
+    }
+
+    .title{
+        width: 430px;
+ 
+    }
+
+    .winner{
+        margin: 0;
+        padding: 0;
+        width: 430px;
+ 
+    }
+
+}
+
+
+.grid-item{
+    background: none;
+    border: none;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    max-width: 170px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+    cursor: pointer;
+    font-size: 50pt;
+    font-family: "Courier";
+}
+
+
+
+
+.grid-item:nth-child(3), .grid-item:nth-child(6){
+    border: none;
+    border-bottom: 5px solid black;
+    max-width: 170px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+    cursor: pointer;
+    font-size: 50pt;
+}
+.grid-item:nth-child(9){
+    border: none;
+    max-width: 170px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+    cursor: pointer;
+    font-size: 50pt;
+}
+
+.grid-item:nth-child(7), .grid-item:nth-child(8){
+    border: none;
+    border-right: 5px solid black;
+    max-width: 170px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+    cursor: pointer;
+    font-size: 50pt;
+}
+
+.grid-item:disabled{
+    font-size: 50pt;
+    font-family: "Courier";
+    color: black;
+}
+
+.replay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.replay button{
+    width: 90px;
+    cursor: pointer;
+}
